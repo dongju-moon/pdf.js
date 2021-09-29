@@ -8,8 +8,8 @@ jobs:
         env:
           moon: ${{ secrets.HOST }}
           testval: 1234
-          testVal: {{ 1a2a3a4atest }}
-        run: echo host $moon $testVal $testval
+          hihi: 1a2a3a4atest
+        run: echo host $moon $testVal $testval $ hihi
       - name: ssh test
         uses: appleboy/ssh-action@master
         with:
